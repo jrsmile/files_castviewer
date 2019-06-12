@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <info>
     <id>files_castviewer</id>
-    <name>PDF viewer</name>
-    <summary>A pdf viewer for Nextcloud</summary>
-    <description><![CDATA[This application integrates the PDF.js library into Nextcloud. Using this
-application users can view their PDF files online without the need to
+    <name>CAST viewer</name>
+    <summary>A CAST viewer for Nextcloud</summary>
+    <description><![CDATA[This application integrates the ASCIInema Player into Nextcloud. Using this
+application users can view their CAST files online without the need to
 download the file.
 
-When this application is enabled publicly shared PDF documents will also
-get shown in the PDF viewer instead of only showing a single static
-snapshot of the document. The PDF viewer requires a modern browser and
+When this application is enabled publicly shared CAST documents will also
+get shown in the CAST Player instead of only showing a single static
+snapshot of the document. The Cast Player requires a modern browser and
 will not work with Microsoft® Internet Explorer® versions below 9.
 
-PDF.js is a JavaScript library developed by Mozilla, you can learn more
-about the PDF.js project at [https://mozilla.github.io/pdf.js/](https://mozilla.github.io/pdf.js/)]]></description>
-    <version>1.6.0</version>
+ASCIInema Player is a JavaScript library developed by Marcin Kulik, you can learn more
+about the project at [https://github.com/asciinema/asciinema-player](https://github.com/asciinema/asciinema-player)]]></description>
+    <version>1.0.0</version>
     <licence>agpl</licence>
-    <author>Thomas Müller, Lukas Reschke</author>
+    <author>Thomas Müller, Lukas Reschke, Jan Reiss</author>
     <namespace>files_castviewer</namespace>
     <default_enable/>
     <category>files</category>
     <category>office</category>
-    <bugs>https://github.com/nextcloud/files_castviewer/issues</bugs>
+    <bugs>https://github.com/jrsmile/files_castviewer/issues</bugs>
     <dependencies>
 		<nextcloud min-version="17" max-version="17" />
     </dependencies>
