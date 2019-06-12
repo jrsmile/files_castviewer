@@ -7,7 +7,7 @@ php:
 env:
   global:
     - CORE_BRANCH=master
-    - APP_NAME=files_pdfviewer
+    - APP_NAME=files_castviewer
   matrix:
     - DB=sqlite
 
