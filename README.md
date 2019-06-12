@@ -10,5 +10,7 @@ This application integrates the [ASCIInema Player](https://github.com/asciinema/
 [![Build Status](https://travis-ci.org/owncloud/files_pdfviewer.svg)](https://travis-ci.org/nextcloud/files_pdfviewer)
 
 Maintainers
+
 ===========
+
 - [Jan Reiss](https://github.com/JRSmile)
