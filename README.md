@@ -1,7 +1,7 @@
-files_pdfviewer
+files_castviewer
 ======
 
-This application integrates the [PDF.js](https://mozilla.github.io/pdf.js/) library into Nextcloud. Using this application users can view their PDF files online without downloading the file.
+This application integrates the [ASCIInema Player](https://github.com/asciinema/asciinema-player) library into Nextcloud. Using this application users can view their CAST files online without downloading the file.
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/files_pdfviewer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/files_pdfviewer/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/owncloud/files_pdfviewer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/files_pdfviewer/?branch=master)
@@ -9,4 +9,4 @@ This application integrates the [PDF.js](https://mozilla.github.io/pdf.js/) libr
 
 Maintainers
 ===========
-- [Lukas Reschke](https://github.com/LukasReschke)
+- [Jan Reiss](https://github.com/JRSmile)
