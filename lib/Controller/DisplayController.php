@@ -41,7 +41,7 @@ class DisplayController extends Controller {
 	 * @param bool $minmode
 	 * @return TemplateResponse
 	 */
-	public function showPdfViewer(bool $minmode = false): TemplateResponse {
+	public function showCastViewer(bool $minmode = false): TemplateResponse {
 		$params = [
 			'urlGenerator' => $this->urlGenerator,
 			'minmode' => $minmode

@@ -12,5 +12,5 @@ declare(strict_types=1);
 namespace OCA\files_castviewer\AppInfo;
 
 return ['routes' => [
-	['name' => 'display#showPdfViewer', 'url' => '/', 'verb' => 'GET'],
+	['name' => 'display#showCastViewer', 'url' => '/', 'verb' => 'GET'],
 ]];

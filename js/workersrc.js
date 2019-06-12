@@ -49,14 +49,14 @@ function initializeCustomPDFViewerApplication() {
 		}
 
 		function getPDFFileNameFromURL(url) {
-			var defaultFilename = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'document.pdf';
+			var defaultFilename = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'document.cast';
 
 			if (isDataSchema(url)) {
-				console.warn('getPDFFileNameFromURL: ' + 'ignoring "data:" URL for performance reasons.');
+				console.warn('getCASTFileNameFromURL: ' + 'ignoring "data:" URL for performance reasons.');
 				return defaultFilename;
 			}
 			var reURI = /^(?:(?:[^:]+:)?\/\/[^\/]+)?([^?#]*)(\?[^#]*)?(#.*)?$/;
-			var reFilename = /[^\/?#=]+\.pdf\b(?!.*\.pdf\b)/i;
+			var reFilename = /[^\/?#=]+\.cast\b(?!.*\.cast\b)/i;
 			var splitURI = reURI.exec(url);
 			var suggestedFilename = reFilename.exec(splitURI[1]) || reFilename.exec(splitURI[2]) || reFilename.exec(splitURI[3]);
 			if (suggestedFilename) {

@@ -46,7 +46,7 @@ class DisplayControllerTest extends TestCase {
 		parent::setUp();
 	}
 
-	public function testShowPdfViewer() {
+	public function testShowCastViewer() {
 		$params = [
 			'urlGenerator' => $this->urlGenerator,
 			'minmode' => false

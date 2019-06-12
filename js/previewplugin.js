@@ -10,12 +10,12 @@
 
 (function(OCA) {
 
-	OCA.FilesPdfViewer = OCA.FilesPdfViewer || {};
+	OCA.FilesCastViewer = OCA.FilesCastViewer || {};
 
 	/**
-	 * @namespace OCA.FilesPdfViewer.PreviewPlugin
+	 * @namespace OCA.FilesCastViewer.PreviewPlugin
 	 */
-	OCA.FilesPdfViewer.PreviewPlugin = {
+	OCA.FilesCastViewer.PreviewPlugin = {
 
 		/**
 		 * @param fileList
@@ -74,7 +74,7 @@
 			// replace the controls with our own
 			$('#app-content #controls').addClass('hidden');
 
-			// if a filelist is present, the PDF viewer can be closed to go back there
+			// if a filelist is present, the Cast viewer can be closed to go back there
 			$('#pdframe').load(function(){
 				var iframe = $('#pdframe').contents();
 				if ($('#fileList').length)
@@ -96,7 +96,7 @@
 			});
 
 			if(!$('html').hasClass('ie8')) {
-				history.pushState({}, '', '#pdfviewer');
+				history.pushState({}, '', '#castviewer');
 			}
 
 			if(!$('html').hasClass('ie8')) {
@@ -115,7 +115,7 @@
 			fileActions.registerAction({
 				name: 'view',
 				displayName: 'Favorite',
-				mime: 'application/pdf',
+				mime: 'application/cast',
 				permissions: OC.PERMISSION_READ,
 				actionHandler: function(fileName, context) {
 					var downloadUrl = context.fileList.getDownloadUrl(fileName, context.dir);
@@ -124,17 +124,17 @@
 					}
 				}
 			});
-			fileActions.setDefault('application/pdf', 'view');
+			fileActions.setDefault('application/cast', 'view');
 		}
 	};
 
 })(OCA);
 
-OC.Plugins.register('OCA.Files.FileList', OCA.FilesPdfViewer.PreviewPlugin);
+OC.Plugins.register('OCA.Files.FileList', OCA.FilesCastViewer.PreviewPlugin);
 
 // FIXME: Hack for single public file view since it is not attached to the fileslist
 $(document).ready(function(){
-	if ($('#isPublic').val() && $('#mimetype').val() === 'application/pdf') {
+	if ($('#isPublic').val() && $('#mimetype').val() === 'application/cast') {
 		$.urlParam = function(name){
 			var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 			if (results == null) {
@@ -145,7 +145,7 @@ $(document).ready(function(){
 		var sharingToken = $('#sharingToken').val();
 		var page = '#page='+$.urlParam('page');
 		var downloadUrl = OC.generateUrl('/s/{token}/download', {token: sharingToken});
-		var viewer = OCA.FilesPdfViewer.PreviewPlugin;
+		var viewer = OCA.FilesCastViewer.PreviewPlugin;
 		viewer.show(downloadUrl, page, false);
 	}
 });
@@ -156,7 +156,7 @@ $(document).ready(function(){
 
 	SidebarPreview.prototype = {
 		attach: function (manager) {
-			manager.addPreviewHandler('application/pdf', this.handlePreview.bind(this));
+			manager.addPreviewHandler('application/cast', this.handlePreview.bind(this));
 		},
 
 		handlePreview: function (model, $thumbnailDiv, $thumbnailContainer, fallback) {
