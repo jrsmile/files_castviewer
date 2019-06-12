@@ -8,7 +8,7 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_PdfViewer\Controller;
+namespace OCA\files_castviewer\Controller;
 
 use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\TemplateResponse;
@@ -27,7 +27,7 @@ class DisplayControllerTest extends TestCase {
 	private $controller;
 
 	public function setUp(){
-		$this->appName = 'files_pdfviewer';
+		$this->appName = 'files_castviewer';
 
 		$this->request = $this->getMockBuilder(
 			'\OCP\IRequest')

@@ -6,17 +6,17 @@
 		 timeoutForMediumTests="900"
 		 timeoutForLargeTests="900"
 		>
-	<testsuite name='ownCloud - Files_Pdfviewer App Tests'>
+	<testsuite name='ownCloud - files_castviewer App Tests'>
 		<directory suffix='test.php'>.</directory>
 	</testsuite>
 	<!-- filters for code coverage -->
 	<filter>
 		<whitelist>
-			<directory suffix=".php">../../files_pdfviewer</directory>
+			<directory suffix=".php">../../files_castviewer</directory>
 			<exclude>
-				<directory suffix=".php">../../files_pdfviewer/vendor</directory>
-				<directory suffix=".php">../../files_pdfviewer/templates</directory>
-				<directory suffix=".php">../../files_pdfviewer/tests</directory>
+				<directory suffix=".php">../../files_castviewer/vendor</directory>
+				<directory suffix=".php">../../files_castviewer/templates</directory>
+				<directory suffix=".php">../../files_castviewer/tests</directory>
 			</exclude>
 		</whitelist>
 	</filter>

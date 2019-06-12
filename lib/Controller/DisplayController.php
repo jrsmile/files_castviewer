@@ -9,7 +9,7 @@ declare(strict_types=1);
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_PdfViewer\Controller;
+namespace OCA\files_castviewer\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\ContentSecurityPolicy;

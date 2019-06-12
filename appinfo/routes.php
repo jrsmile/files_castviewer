@@ -9,7 +9,7 @@ declare(strict_types=1);
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_PdfViewer\AppInfo;
+namespace OCA\files_castviewer\AppInfo;
 
 return ['routes' => [
 	['name' => 'display#showPdfViewer', 'url' => '/', 'verb' => 'GET'],

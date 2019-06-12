@@ -49,7 +49,7 @@
 			var self = this;
 			var shown = true;
 			var $iframe;
-			var viewer = OC.generateUrl('/apps/files_pdfviewer/?file={file}', {file: downloadUrl});
+			var viewer = OC.generateUrl('/apps/files_castviewer/?file={file}', {file: downloadUrl});
 			$iframe = $('<iframe id="pdframe" style="width:100%;height:100%;display:block;position:absolute;top:0;z-index:1041;left:0;" src="'+viewer+param+'" sandbox="allow-scripts allow-same-origin allow-popups allow-modals allow-top-navigation" allowfullscreen="true"/>');
 
 			if(isFileList === true) {
@@ -165,7 +165,7 @@ $(document).ready(function(){
 
 			var downloadUrl = Files.getDownloadUrl(model.get('name'), model.get('path'));
 
-			var viewer = OC.generateUrl('/apps/files_pdfviewer/?minmode=true&file={file}', {file: downloadUrl});
+			var viewer = OC.generateUrl('/apps/files_castviewer/?minmode=true&file={file}', {file: downloadUrl});
 			var $iframe = $('<iframe id="pdframe-sidebar" style="width:100%;height:' + previewHeight + 'px;display:block;" src="' + viewer + '" sandbox="allow-scripts allow-same-origin allow-popups allow-modals" />');
 			$thumbnailDiv.append($iframe);
 

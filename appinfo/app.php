@@ -9,9 +9,9 @@ declare(strict_types=1);
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_PdfViewer\AppInfo;
+namespace OCA\files_castviewer\AppInfo;
 
 use OCP\Util;
 
-Util::addScript('files_pdfviewer', 'previewplugin');
-Util::addStyle('files_pdfviewer', 'style');
+Util::addScript('files_castviewer', 'previewplugin');
+Util::addStyle('files_castviewer', 'style');
