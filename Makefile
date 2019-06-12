@@ -1,4 +1,4 @@
-app_name=files_pdfviewer
+app_name=files_castviewer
 
 project_dir=$(CURDIR)/../$(app_name)
 build_dir=$(CURDIR)/build/artifacts
