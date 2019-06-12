@@ -1,6 +1,8 @@
 files_castviewer
 ======
 
+[NOT WORKING YET]
+
 This application integrates the [ASCIInema Player](https://github.com/asciinema/asciinema-player) library into Nextcloud. Using this application users can view their CAST files online without downloading the file.
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/files_pdfviewer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/files_pdfviewer/?branch=master)
